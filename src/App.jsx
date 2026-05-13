@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Leaf, 
@@ -14,6 +14,7 @@ import {
   Coffee,
   ArrowRight
 } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 // --- Animation Variants ---
 const sectionReveal = {
@@ -834,6 +835,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }
